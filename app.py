@@ -45,7 +45,7 @@ st.write(df)
 
 # Load dataset
 # Disesuaikan untuk menggunakan dataset liver, bukan 'heart.csv'
-liver_data = pd.read_csv('Data Pasien penyakit liver.csv')  # Ganti dengan nama file dataset penyakit liver Anda
+liver_data = pd.read_csv('Dataliver.csv')  # Ganti dengan nama file dataset penyakit liver Anda
 
 # Preprocessing
 X = liver_data.drop(columns='Dataset')
