@@ -19,7 +19,8 @@ def user_input_features():
     Aspartate_Aminotransferase = st.sidebar.number_input("Aspartate Aminotransferase 10-3000", 10, 3000, 100)
     Total_Protiens = st.sidebar.number_input("Total Protiens 2-10", 2.0, 10.0, 6.0)
     Albumin = st.sidebar.number_input("Albumin 2-6 ", 2.0, 6.0, 4.0)
-    Albumin_and_Globulin_Ratio = st.sidebar.number_input("Albumin and Globulin Ratio 0-2.5 ", 0.1, 2.5, 1.0)
+    # Disesuaikan agar cocok dengan kode pertama
+    Albumin_and_Globulin_Ratio = st.sidebar.number_input("Albumin and Globulin Ratio 0-3 ", 0.1, 2.5, 1.0) 
     
     data = {
         'Age': Age,
@@ -43,7 +44,8 @@ st.subheader('Input Parameters')
 st.write(df)
 
 # Load dataset
-liver_data = pd.read_csv('heart.csv')  # Ganti dengan nama file dataset penyakit liver Anda
+# Disesuaikan untuk menggunakan dataset liver, bukan 'heart.csv'
+liver_data = pd.read_csv('Data Pasien penyakit liver.csv')  # Ganti dengan nama file dataset penyakit liver Anda
 
 # Preprocessing
 X = liver_data.drop(columns='Dataset')
